@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./form.js" defer></script>
+</head>
+
+<body>
+
+    <form>
+
+        <h1>Checkpoint 01</h1>
+        
+
+        <div class="form-control">
+
+
+            <div class="form-control" id="formControlTitulo">
+                <label for="titulo">Título</label>
+                <input 
+                type="text" 
+                required 
+                minlength="4" 
+                maxlength="20" 
+                id="tituloInput" 
+                placeholder="Digite o título">
+
+                <small id="cpo">Campo obrigatório</small>
+            </div>
+
+            <div class="form-control" id="formControlUrlDaImagem">
+                <label for="urlDaImagem">Url da imagem</label>
+                <input 
+                type="text" 
+                required 
+                minlength="5" 
+                id="urlDaImagemInput" 
+                placeholder="Digite a url da imagem">
+
+                <small id="cpo">Campo obrigatório</small>
+            </div>
+
+            <div class="form-control" id="formControlDescricao">
+                <label for="descricao">Descrição</label>
+
+                <textarea 
+                name="descricao" 
+                required 
+                minlength="4" 
+                id="descricaoInput" 
+                cols="30" 
+                rows="10">
+                </textarea>
+
+                <small id="cpo">Campo obrigatório</small>
+            </div>
+
+        </div>
+
+        <button type="submit" id="loginButton">Enviar</button>
+
+
+
+
+
+
+    </form>
+
+    <div id="footer">
+        <div>
+            <p class="text-muted credit">
+                Robson da Silva Santos, <br>
+                Soári Correa de Carvalho
+            </p>
+        </div>
+
+
+</body>
+
+<footer>
+    <p>
+        Check point 01 &copy; 2023
+    </p>
+</footer>
+
+</html>
