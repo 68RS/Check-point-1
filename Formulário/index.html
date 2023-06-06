@@ -10,82 +10,58 @@
     <script src="./form.js" defer></script>
 </head>
 
+
 <body>
 
-    <form>
+    <header>
+        <h1>Checkpoint 1</h1>
+    </header>
 
-        <h1>Checkpoint 01</h1>
-        
+    </div>
+    <div>
+        <h2>Carros</h2>
 
-        <div class="form-control">
 
-
-            <div class="form-control" id="formControlTitulo">
-                <label for="titulo">Título</label>
-                <input 
-                type="text" 
-                required 
-                minlength="4" 
-                maxlength="20" 
-                id="tituloInput" 
-                placeholder="Digite o título">
-
-                <small id="cpo">Campo obrigatório</small>
-            </div>
-
-            <div class="form-control" id="formControlUrlDaImagem">
-                <label for="urlDaImagem">Url da imagem</label>
-                <input 
-                type="text" 
-                required 
-                minlength="5" 
-                id="urlDaImagemInput" 
-                placeholder="Digite a url da imagem">
-
-                <small id="cpo">Campo obrigatório</small>
-            </div>
-
-            <div class="form-control" id="formControlDescricao">
-                <label for="descricao">Descrição</label>
-
-                <textarea 
-                name="descricao" 
-                required 
-                minlength="4" 
-                id="descricaoInput" 
-                cols="30" 
-                rows="10">
-                </textarea>
-
-                <small id="cpo">Campo obrigatório</small>
-            </div>
-
+    </div>
+    <form id="meuForm">
+        <div id="tituloWrapper">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" minlength="4">
+            <span id="tituloError" class="error-message"></span>
         </div>
 
-        <button type="submit" id="loginButton">Enviar</button>
+        <div id="descricaoWrapper">
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" minlength="4"></textarea>
+            <span id="descricaoError" class="error-message"></span>
+        </div>
 
+        <div id="urlImagemWrapper">
+            <label for="urlImagem">URL da imagem:</label>
+            <input type="url" id="urlImagem" name="urlImagem">
+            <span id="urlImagemError" class="error-message"></span>
+        </div>
 
+        <div id="assinaturaWrapper">
+            <label for="assinatura">legenda:</label>
+            <input type="text" id="assinatura" name="assinatura">
+            <span id="assinaturaError" class="error-message"></span>
+        </div>
 
-
-
-
+        <button type="submit" id="submitBtn" disabled>Enviar</button>
     </form>
 
-    <div id="footer">
-        <div>
-            <p class="text-muted credit">
-                Robson da Silva Santos, <br>
-                Soári Correa de Carvalho
-            </p>
-        </div>
+    
+    <div id="cardsContainer"></div>
 
-
+    <script src="./app.js"></script>
 </body>
-
 <footer>
-    <p>
-        Check point 01 &copy; 2023
-    </p>
+    <footer>
+        <p>Robson da Silva Santos e Soári Carvalho</p>
+    </footer>
+    <!-- </div> -->
 </footer>
+
 
 </html>
